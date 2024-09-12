@@ -1,6 +1,10 @@
-name: SAST
+name: SAST 
 on:
-  push:
+  pull_request:
+    branches-ignore:
+      - main
+    paths-ignore:
+      - '.github'
 jobs:
   sast_semgrep:
     permissions:                                                                         
