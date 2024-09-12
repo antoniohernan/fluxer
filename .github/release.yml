@@ -1,0 +1,20 @@
+changelog:
+  exclude:
+    labels:
+      - ignore-changelog
+
+  categories:
+    - title: ':rocket: New features and improvements'
+      labels:
+        - 'feature'
+        - 'enhancement'
+    - title: ':lady_beetle: Bug fixes'
+      labels:
+        - 'fix'
+        - 'bug'
+    - title: ':book: Documentation'
+      labels:
+        - 'documentation'
+    - title: ':question: Other Changes'
+      labels:
+        - '*'
