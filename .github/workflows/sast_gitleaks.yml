@@ -1,6 +1,6 @@
 name: GIT_Leaks
 on:
-  workflow_dispatch:
+  push:
 jobs:
   sast_gitleaks:
     permissions:                                                                         
