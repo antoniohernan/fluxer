@@ -1,0 +1,10 @@
+name: Static application security testing
+on:
+  workflow_dispatch:
+jobs:
+  sast_semgrep:
+    permissions:                                                                         
+      contents: read
+    uses: ramshackle-code/sast_semgrep/.github/workflows/sast_gitleaks.yml@922631f04aeeee05b0d16295608f13a7616a5844  #v1.3.0
+    secrets:
+      token: ${{ secrets.GITHUB_TOKEN }}
