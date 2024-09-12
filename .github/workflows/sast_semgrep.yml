@@ -1,6 +1,6 @@
-name: Static application security testing
+name: SAST
 on:
-  workflow_dispatch:
+  push:
 jobs:
   sast_semgrep:
     permissions:                                                                         
