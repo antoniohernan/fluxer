@@ -5,10 +5,12 @@ on:
       - main
     paths-ignore:
       - '.github'
+  workflow_dispatch:
 jobs:
   sast_semgrep:
     permissions:                                                                         
       contents: read
-    uses: ramshackle-code/sast_semgrep/.github/workflows/sast_semgrep.yml@77751635f33b222b56bc198d6e0a2ab5722715c4   #v1.0.3
+    # uses: ramshackle-code/sast_semgrep/.github/workflows/sast_semgrep.yml@77751635f33b222b56bc198d6e0a2ab5722715c4   #v1.0.3
+    uses: ramshackle-code/sast_semgrep/.github/workflows/sast_semgrep.yml@feat/nodocker
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
